@@ -48,7 +48,6 @@ def read_in_data(file_path):
     return locals() # return all local variables as a python dictonary object
 
 
-
 def plot_graph(in_dict):
     plt.style.use('dark_background')  # Set black background
     fig, ax = plt.subplots(figsize=(10, 6))
@@ -79,10 +78,13 @@ def plot_graph(in_dict):
     ax.spines['right'].set_visible(False)
     ax.spines['left'].set_visible(False)
     ax.spines['bottom'].set_visible(False)
-    # Show the plot
+    # Save the plot before displaying it
     plt.tight_layout()
-    plt.show()
-    plt.close()
+    plt.draw()  # Ensure the plot is fully drawn
+    plt.savefig('example_output.png')  # Save the plot
+    plt.show()  # Display the plot
+    plt.close()  # Close the figure to avoid memory issues
+
 
 
 
