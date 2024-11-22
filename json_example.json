@@ -1,0 +1,30 @@
+{
+  "graph": {
+    "title": "Soft Drink Sales",
+    "type": "bar",
+    "datasequences": [
+      {
+        "title": "X-Cola",
+        "color": "red",
+        "datapoints": [
+          { "title": "2008", "value": 22 },
+          { "title": "2009", "value": 24 },
+          { "title": "2010", "value": 25.5 },
+          { "title": "2011", "value": 27.9 },
+          { "title": "2012", "value": 31 }
+        ]
+      },
+      {
+        "title": "Y-Cola",
+        "color": "blue",
+        "datapoints": [
+          { "title": "2008", "value": 18.4 },
+          { "title": "2009", "value": 20.1 },
+          { "title": "2010", "value": 24.8 },
+          { "title": "2011", "value": 26.1 },
+          { "title": "2012", "value": 29 }
+        ]
+      }
+    ]
+  }
+}
